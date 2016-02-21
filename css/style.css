@@ -1,0 +1,124 @@
+body {
+  /* Typography Declarations */
+  color: #222222;
+  font-size: 1rem;
+  font-family: 'Muli', sans-serif;
+  background-color: #474E6C;
+  padding:8px;
+
+}
+
+h1,h2,h3,h4 {
+  font-family: 'Ovo', serif;
+  color: #8EC9D2;
+  /*text-transform:uppercase;*/
+  font-variant: small-caps;
+}
+
+p{
+  color: #B7B8BF;
+}
+/* unvisited link */
+a:link {
+  color: #8EC9D2;
+  font-weight: bold;
+}
+
+/* visited link */
+a:visited {
+  color: #B7B8BF;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FF8E00;
+}
+
+.content-footer,
+.masthead-heading,
+.masthead-intro {
+  text-align: center;
+}
+
+.masthead {
+  padding: 2.5em 0;
+  background-image: url("http://angelawolff.co.uk/wp-content/uploads/2016/01/CoolMoxie.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-bottom: 5px double #B7B8BF;
+  margin-bottom: 1rem;
+  background-color: #2E334A;
+}
+
+.masthead-heading {
+  margin-top: -0.4em;
+  font-size: 2.5rem;
+  color: #8EC9D2;
+  letter-spacing: 0.3em;
+  /*text-transform:uppercase;*/
+  font-variant: small-caps;
+}
+
+.masthead-intro {
+  margin-bottom: -0.4em;
+  color: #B7B8BF;
+}
+
+.Projects, .Blogs {
+  max-width: 55em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  margin-bottom: 15em;
+
+}
+
+[class*='Col-Project-'] {
+  float:left;
+  width: 33.33%;
+}
+[class*='Col-Blog-'] {
+  float:left;
+  width: 33.33%;
+
+}
+
+
+.content-footer {
+  /* Red, Green, Blue: #RRGGBB */
+  background-color: #2E334A;
+  padding: 0.1em;
+  margin-top: 2rem;
+  border-bottom: 5px double #B7B8BF;
+  margin-bottom: 1rem;
+}
+
+.content-footer .social {
+  text-align: center;
+}
+
+.content-footer > p {
+  color: #8EC9D2;
+  text-align: center;
+}
+
+.social {
+  padding-left: 0;
+}
+
+.social > li {
+  color: #ff8e00;
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid #eaebec;
+  border-radius: 1.25rem;
+  width: 2.5rem;
+  height: 1.2rem;
+  margin:1.25rem 25px;
+  padding: 0.625rem 0;
+}
+.caption > p {
+  color: #B7B8BF;
+  text-align: center;
+}
