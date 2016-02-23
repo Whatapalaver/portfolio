@@ -157,14 +157,47 @@ a:hover {
   text-align: center;
 }
 
+
+/* Media Considerations */
+
+@media only screen and (max-width: 900px)
+{
+.masthead-heading {
+  margin-top: 1.2em;
+  font-size: 2.2rem;
+  letter-spacing: 0.2em;
+  padding-right: 120px;
+}
+
+.masthead-intro {
+  font-size: 1rem;
+  padding-right: 120px;
+}
+}
+@media only screen and (max-width: 600px)
+{
+.masthead-heading {
+  margin-top: 1.2em;
+  font-size: 1.8rem;
+  letter-spacing: 0.2em;
+  padding-right: 90px;
+}
+
+.masthead-intro {
+  font-size: 1rem;
+  padding-right: 90px;
+}
+}
+/* End of Media Considerations */
+
 /* Animation */
 @keyframes animated_div
 {
 0%		{transform: rotate(0deg);left:0px;}
 25%		{transform: rotate(20deg);left:0px;}
-50%		{transform: rotate(0deg);left:170px;}
-55%		{transform: rotate(0deg);left:170px;}
-70%		{transform: rotate(0deg);left:170px;background:#2E334A;}
+50%		{transform: rotate(0deg);left:250px;}
+55%		{transform: rotate(0deg);left:250px;}
+70%		{transform: rotate(0deg);left:250px;background:#2E334A;}
 100%	{transform: rotate(-360deg);left:0px;}
 }
 
@@ -172,9 +205,9 @@ a:hover {
 {
 0%		{-webkit-transform: rotate(0deg);left:0px;}
 25%		{-webkit-transform: rotate(20deg);left:0px;}
-50%		{-webkit-transform: rotate(0deg);left:170px;}
-55%		{-webkit-transform: rotate(0deg);left:170px;}
-70%		{-webkit-transform: rotate(0deg);left:170px;background:#2E334A;}
+50%		{-webkit-transform: rotate(0deg);left:250px;}
+55%		{-webkit-transform: rotate(0deg);left:250px;}
+70%		{-webkit-transform: rotate(0deg);left:250px;background:#2E334A;}
 100%	{-webkit-transform: rotate(-360deg);left:0px;}
 }
 
