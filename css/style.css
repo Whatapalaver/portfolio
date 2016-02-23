@@ -8,11 +8,63 @@ body {
 
 }
 
+/* Animation */
+@keyframes animated_div
+{
+0%		{transform: rotate(0deg);left:0px;}
+25%		{transform: rotate(20deg);left:0px;}
+50%		{transform: rotate(0deg);left:170px;}
+55%		{transform: rotate(0deg);left:170px;}
+70%		{transform: rotate(0deg);left:170px;background:#2E334A;}
+100%	{transform: rotate(-360deg);left:0px;}
+}
+
+@-webkit-keyframes animated_div
+{
+0%		{-webkit-transform: rotate(0deg);left:0px;}
+25%		{-webkit-transform: rotate(20deg);left:0px;}
+50%		{-webkit-transform: rotate(0deg);left:170px;}
+55%		{-webkit-transform: rotate(0deg);left:170px;}
+70%		{-webkit-transform: rotate(0deg);left:170px;background:#2E334A;}
+100%	{-webkit-transform: rotate(-360deg);left:0px;}
+}
+
+
+@-webkit-keyframes hinge
+{
+0% {-webkit-transform-origin:top left;transform-origin:top left;
+                   -webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}
+20%,60% {-webkit-transform:rotate3d(0,0,1,80deg);transform:rotate3d(0,0,1,80deg);
+                        -webkit-transform-origin:top left;transform-origin:top left;
+                        -webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}
+40%,80% {-webkit-transform:rotate3d(0,0,1,60deg);transform:rotate3d(0,0,1,60deg);
+                        -webkit-transform-origin:top left;transform-origin:top left;
+                        -webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;opacity:1}
+100% {-webkit-transform:translate3d(0,700px,0);transform:translate3d(0,700px,0);opacity:0}
+}
+
+@keyframes hinge
+{
+0% {-webkit-transform-origin:top left;transform-origin:top left;
+    -webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}
+20%,60% {-webkit-transform:rotate3d(0,0,1,80deg);transform:rotate3d(0,0,1,80deg);
+         -webkit-transform-origin:top left;transform-origin:top left;
+        -webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out}
+40%,80% {-webkit-transform:rotate3d(0,0,1,60deg);transform:rotate3d(0,0,1,60deg);
+        -webkit-transform-origin:top left;transform-origin:top left;
+        -webkit-animation-timing-function:ease-in-out;animation-timing-function:ease-in-out;opacity:1}
+100% {-webkit-transform:translate3d(0,700px,0);transform:translate3d(0,700px,0);opacity:0}
+}
+
+/* End Animation */
+
 h1,h2,h3,h4 {
   font-family: 'Ovo', serif;
   color: #8EC9D2;
   /*text-transform:uppercase;*/
   font-variant: small-caps;
+  margin-bottom: 0.2em;
+
 }
 
 p{
@@ -41,18 +93,34 @@ a:hover {
 }
 
 .masthead {
-  padding: 2.5em 0;
-  background-image: url("http://angelawolff.co.uk/wp-content/uploads/2016/01/CoolMoxie.png");
+  padding: 0.5em 0;
+  /* background-image: url("http://angelawolff.co.uk/wp-content/uploads/2016/01/CoolMoxie.png"); */
   background-size: contain;
   background-repeat: no-repeat;
   border-bottom: 5px double #B7B8BF;
   margin-bottom: 1rem;
   background-color: #2E334A;
+  overflow:auto;
 }
 
+.logo_animate {
+  position: relative;
+  float: left;
+  padding: 0em 0;
+  /* background-image: url("http://angelawolff.co.uk/wp-content/uploads/2016/01/CoolMoxie.png"); */
+  /*background-size: contain;*/
+  /*background-repeat: no-repeat;*/
+  /*border-bottom: 5px double #B7B8BF;*/
+  /*margin-bottom: 1rem;*/
+  /*background-color: #2E334A;*/
+  animation:animated_div 5s 1;
+}
+
+
 .masthead-heading {
-  margin-top: -0.4em;
-  font-size: 2.5rem;
+  margin-top: 0.8em;
+  font-size: 3rem;
+  padding-right: 180px;
   color: #8EC9D2;
   letter-spacing: 0.3em;
   /*text-transform:uppercase;*/
@@ -61,7 +129,14 @@ a:hover {
 
 .masthead-intro {
   margin-bottom: -0.4em;
+  padding-right: 180px;
+  font-size: 1.1rem;
   color: #B7B8BF;
+  -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: hinge;
+    animation-duration: 3s;
+    animation-delay: 2s;
 }
 
 .Projects, .Blogs {
@@ -69,13 +144,14 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   margin-top: 2em;
-  margin-bottom: 15em;
+  margin-bottom: 2em;
+  overflow: auto;
 
 }
 
 [class*='Col-Project-'] {
   float:left;
-  width: 33.33%;
+  width: 50%;
 }
 [class*='Col-Blog-'] {
   float:left;
@@ -112,8 +188,8 @@ a:hover {
   font-weight: bold;
   text-align: center;
   border: 1px solid #eaebec;
-  border-radius: 1.25rem;
-  width: 2.5rem;
+  /* border-radius: 1.25rem; */
+  /* width: 2.5rem; */
   height: 1.2rem;
   margin:1.25rem 25px;
   padding: 0.625rem 0;
