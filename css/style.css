@@ -4,7 +4,7 @@ body {
   font-size: 1rem;
   font-family: 'Muli', sans-serif;
   background-color: #474E6C;
-  padding:8px;
+  padding:0px 8px;
 
 }
 
@@ -38,14 +38,15 @@ a:hover {
   color: #FF8E00;
 }
 
-.content-footer,
-.masthead-heading,
-.masthead-intro {
+.content-footer
+{
   text-align: center;
 }
 
 .masthead {
   position: fixed;
+  text-align: center;
+  top: 0;
   width: 98.5%;
   padding: 0em 0;
   /* background-image: url("http://angelawolff.co.uk/wp-content/uploads/2016/01/CoolMoxie.png"); */
@@ -60,7 +61,7 @@ a:hover {
 .logo_animate {
   position: relative;
   float: left;
-  padding: 0em 0;
+  padding: 0 0;
   /* background-image: url("http://angelawolff.co.uk/wp-content/uploads/2016/01/CoolMoxie.png"); */
   /*background-size: contain;*/
   /*background-repeat: no-repeat;*/
@@ -74,7 +75,7 @@ a:hover {
 .masthead-heading {
   margin-top: 0.8em;
   font-size: 3rem;
-  padding-right: 180px;
+  margin-right: 180px;
   color: #8EC9D2;
   letter-spacing: 0.3em;
   /*text-transform:uppercase;*/
@@ -83,7 +84,7 @@ a:hover {
 
 .masthead-intro {
   margin-bottom: -0.4em;
-  padding-right: 180px;
+  margin-right: 180px;
   font-size: 1.1rem;
   color: #B7B8BF;
   -webkit-animation-name: example; /* Chrome, Safari, Opera */
@@ -137,7 +138,8 @@ a:hover {
 }
 
 .social {
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .social > li {
@@ -145,13 +147,19 @@ a:hover {
   display: inline-block;
   font-weight: bold;
   text-align: center;
-  border: 1px solid #eaebec;
+
   /* border-radius: 1.25rem; */
   /* width: 2.5rem; */
   height: 1.2rem;
   margin:1.25rem 25px;
   padding: 0.625rem 0;
 }
+
+.social li i {
+  border: 1px solid #eaebec;
+  padding: 0.625rem;
+}
+
 .caption > p {
   color: #B7B8BF;
   text-align: center;
